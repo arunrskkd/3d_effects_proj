@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+.section{
+    width: 100vw;
+    height: 100vh;
+}
+.fullsect{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.imgsetc{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: -30vw;
+    margin-top: -35vw;
+    top: 50%;
+    width: 160vw;
+    height: 70vw;
+    background: url(./images/home-panorama.jpg) no-repeat;
+    transform: matrix(1, 0, 0, 1, -294.6, 42.56);
+}
+
+</style>
+<body>
+    <div class="section">
+        <div class="fullsect">
+            <div class="imgsetc">
+
+            </div>
+
+
+        </div>
+
+
+
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/TweenMax.min.js"></script>
+    <script>
+        $(window).resize(function() {
+			panoSizeHandler();
+		}); // END OF RESIZE
+
+        function panoSizeHandler() {
+	panoSizeX = windowWidth * 0.3;
+	panoSizeY = windowWidth * 0.07;
+	panoHalf = windowWidth/2;
+	panoHalfHeight = windowHeight/2;
+	panoAngleIntensity = 1300 / windowWidth;
+}
+    windowWidth = $(window).innerWidth();
+	windowHeight = $(window).height(); 
+	halfWindowWidth = windowWidth / 2;
+	halfWindowHeight = windowHeight / 2;
+	
+
+
+    panoSizeHandler();
+    panorama();
+    
+    function panorama(e) {
+	$( "body" ).mousemove(function(e) {
+		var mouseX = e.pageX;
+		var mouseY = e.pageY;
+	  	panoramaCalcs(mouseX, mouseY, 2.5);
+	});
+}
+
+function panoramaCalcs(mX, mY, objectsSpeed) {
+	
+	panoMouseXBase = (mX-panoHalf)/panoHalf;
+	panoMouseYBase = (mY-panoHalfHeight)/panoHalfHeight;
+
+	panoramaMouseX = panoMouseXBase * -panoSizeX;
+	panoramaMouseY = ((mY - panoHalf) / panoHalf) * -panoSizeY;
+	
+	panoramaAngleX = panoramaMouseX / -4;
+	panoramaAngleY = panoramaMouseY / 8;
+
+	// TweenMax.to(radarSpin,
+	// 	1, {
+	// 		rotation: panoMouseXBase*60
+	// 	}
+	// );
+
+   	TweenMax.to($('.imgsetc'),
+		1.7, {
+			x: panoramaMouseX,
+			y: panoramaMouseY
+		}
+	);
+
+	// panoramaObject.each(function() {
+	// 	panoramaObjectMovement($(this), objectsSpeed);
+    // });
+}
+function panoramaObjectMovement(e, objectsSpeed) {
+	thisX = e.attr('data-pano-x');
+	thisY = e.attr('data-pano-y');
+	panoObjectX = (((thisX - panoMouseXBase)*panoHalf)*1.2);
+	panoObjectY = (((thisY - panoMouseYBase)*panoHalfHeight)/1.5);
+	angleObjectX = ((panoObjectX/-12)*panoFallbackVar)*panoAngleIntensity;
+	angleObjectY = ((panoObjectY/20)*panoFallbackVar)*panoAngleIntensity;
+	TweenMax.to(e,
+		objectsSpeed, {
+			x: panoObjectX,
+			y: panoObjectY,
+			rotationY: angleObjectX,
+			rotationX: angleObjectY,
+			ease: 'circ.easeInOut'
+			// MAKE SURE ROTATIONS ARE HANDLED SEPARATELY FOR NON-SAFARI!
+		}
+	);
+}
+
+    </script>
+</body>
+</html>

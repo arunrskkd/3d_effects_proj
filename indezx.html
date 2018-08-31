@@ -1,0 +1,1135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<style>
+body{
+    margin:0;
+}
+/* style panorama efect banner starts */
+.section{
+    width: 100%;
+    height: 50vw;
+    background: #000;
+}
+.fullsect{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.imgsetc{
+    position: absolute;
+    left: -31vw;
+    margin-top: -35vw;
+    top: 34%;
+    width: 164vw;
+    height: 82vw;
+    background: url(./images/c1.jpg) no-repeat;
+    background-size: cover;
+
+}
+.imgtwosect{
+    z-index: 25000;
+    position: absolute;
+    color: #fff;
+    font-size: 18px;
+    background: url(images/counerbakg.png) no-repeat;
+    background-position: -1px 14px;
+    height: 100px;
+    padding: 4px 17px;
+
+}
+.posione{
+    left: 44%;
+    top: 0px;
+}
+.positwo{
+    left: 62%;
+    top: 35px;
+}
+.posithree{
+    left: 12%;
+    top: -91px;
+}
+.posifour{
+    left: 97%;
+    top: -14px;
+}
+.sectheading{
+
+background:#041438;
+}
+/* style panorama efect banner ends */
+h1,h2,h3,h4,h5,h6{
+    margin:0;
+    padding:0;
+}
+img{
+    width: 100%;
+}
+/* style ripple efect starts */
+.sectheading{
+    width: 100%;
+    position: relative;
+}
+.positionone{
+    position:absolute;
+    right: 10%;
+    top:20%;
+} 
+ .ripples {
+	position: absolute;
+    top: 53%;
+    left: 61.5%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 71px;
+    height: 70px;
+}
+
+ .ripples i {
+	width: 100%;
+	height: 100%;
+	-webkit-border-radius: 50%;
+	-ms-border-radius: 50%;
+	border-radius: 50%;
+	position: absolute;
+	border: 1px solid #6afefd;
+	opacity: .01;
+	/* -webkit-animation-play-state: paused!important;
+	-ms-animation-play-state: paused!important;
+	animation-play-state: paused!important */
+}
+
+ .ripples i:first-child {
+	-webkit-animation: ripples 3s 1s linear infinite;
+	animation: ripples 3s 1s linear infinite
+}
+
+ .ripples i:nth-child(2) {
+	-webkit-animation: ripples 3s 1.4s linear infinite;
+	animation: ripples 3s 1.4s linear infinite
+}
+
+ .ripples i:nth-child(3) {
+	-webkit-animation: ripples 3s 1.8s linear infinite;
+	animation: ripples 3s 1.8s linear infinite
+}
+
+ .ripples i:nth-child(4) {
+	-webkit-animation: ripples 3s 2.2s linear infinite;
+	animation: ripples 3s 2.2s linear infinite
+}
+
+ .ripples i:nth-child(5) {
+	-webkit-animation: ripples 3s 2.6s linear infinite;
+	animation: ripples 3s 2.6s linear infinite
+}
+.active .ripples i {
+	-webkit-animation-play-state: running!important;
+	-ms-animation-play-state: running!important;
+	animation-play-state: running!important
+}
+@-webkit-keyframes ripples {
+	0% {
+		opacity: .01;
+		-webkit-transform: scale(.8);
+		-ms-transform: scale(.8);
+		transform: scale(.8)
+	}
+	50% {
+		opacity: .5;
+		-webkit-transform: scale(1.8);
+		-ms-transform: scale(1.8);
+		transform: scale(1.8)
+	}
+	to {
+		opacity: .01;
+		-webkit-transform: scale(2);
+		-ms-transform: scale(2);
+		transform: scale(2)
+	}
+}
+
+@-moz-keyframes ripples {
+	0% {
+		opacity: .01;
+		-webkit-transform: scale(.8);
+		-ms-transform: scale(.8);
+		transform: scale(.8)
+	}
+	50% {
+		opacity: .5;
+		-webkit-transform: scale(1.8);
+		-ms-transform: scale(1.8);
+		transform: scale(1.8)
+	}
+	to {
+		opacity: .01;
+		-webkit-transform: scale(3);
+		-ms-transform: scale(3);
+		transform: scale(3)
+	}
+}
+
+@-ms-keyframes ripples {
+	0% {
+		opacity: .01;
+		-webkit-transform: scale(.8);
+		-ms-transform: scale(.8);
+		transform: scale(.8)
+	}
+	50% {
+		opacity: .5;
+		-webkit-transform: scale(1.8);
+		-ms-transform: scale(1.8);
+		transform: scale(1.8)
+	}
+	to {
+		opacity: .01;
+		-webkit-transform: scale(3);
+		-ms-transform: scale(3);
+		transform: scale(3)
+	}
+}
+
+@keyframes ripples {
+	0% {
+		opacity: .01;
+		-webkit-transform: scale(.8);
+		-ms-transform: scale(.8);
+		transform: scale(.8)
+	}
+	50% {
+		opacity: .5;
+		-webkit-transform: scale(1.8);
+		-ms-transform: scale(1.8);
+		transform: scale(1.8)
+	}
+	to {
+		opacity: .01;
+		-webkit-transform: scale(3);
+		-ms-transform: scale(3);
+		transform: scale(3)
+	}
+}
+
+
+
+/* style ripple efect starts */
+
+
+/* small ripple effects starts */
+.sectionthree{
+    position: relative;
+}
+.ripleeffecttwo{
+    position: absolute;
+    left: 23.2%;
+    top: 25%;
+}
+@keyframes rippleftwo {
+  0% { 
+    opacity: 1;
+    width: 0;
+    height: 0;
+  }
+  20% { 
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.rippleeftwo {
+  width: 0;
+  height: 0;
+  opacity: 1;
+  border-radius: 100%;
+  background-color: #61fffe;;
+  transform: translate(-50%, -50%);
+}
+.ripple-one {
+  animation: rippleftwo 2s infinite;
+}
+
+.ripple-two {
+  animation: rippleftwo 2s infinite 0.66s;
+}
+
+.ripple-three {
+  animation: rippleftwo 2s infinite 1.32s;
+}
+.positiontwo{
+    left: 19.2%;
+    top: 27%;
+
+}
+.positionthree{
+    left: 26.5%;
+    top: 26%;
+
+}
+
+/* small ripple style ends */
+
+/* falling effects start */
+
+@-webkit-keyframes emptyNetOdd {
+	0% {
+		opacity: 0;
+		-webkit-transform: translate(-20px) scale(0) rotate(-20deg);
+		-ms-transform: translate(-20px) scale(0) rotate(-20deg);
+		transform: translate(-20px) scale(0) rotate(-20deg)
+	}
+	33% {
+		opacity: 1;
+		-webkit-transform: translate(10px, 90px) scale(.6) rotate(5deg);
+		-ms-transform: translate(10px, 90px) scale(.6) rotate(5deg);
+		transform: translate(10px, 90px) scale(.6) rotate(5deg)
+	}
+	66% {
+		opacity: 1;
+		-webkit-transform: translate(90px, 220px) scale(.8) rotate(30deg);
+		-ms-transform: translate(90px, 220px) scale(.8) rotate(30deg);
+		transform: translate(90px, 220px) scale(.8) rotate(30deg)
+	}
+	to {
+		opacity: 0;
+		-webkit-transform: translate(140px, 400px) scale(.5) rotate(60deg);
+		-ms-transform: translate(140px, 400px) scale(.5) rotate(60deg);
+		transform: translate(140px, 400px) scale(.5) rotate(60deg)
+	}
+}
+
+@-moz-keyframes emptyNetOdd {
+	0% {
+		opacity: 0;
+		-webkit-transform: translate(-20px) scale(0) rotate(-20deg);
+		-ms-transform: translate(-20px) scale(0) rotate(-20deg);
+		transform: translate(-20px) scale(0) rotate(-20deg)
+	}
+	33% {
+		opacity: 1;
+		-webkit-transform: translate(10px, 90px) scale(.6) rotate(5deg);
+		-ms-transform: translate(10px, 90px) scale(.6) rotate(5deg);
+		transform: translate(10px, 90px) scale(.6) rotate(5deg)
+	}
+	66% {
+		opacity: 1;
+		-webkit-transform: translate(90px, 220px) scale(.8) rotate(30deg);
+		-ms-transform: translate(90px, 220px) scale(.8) rotate(30deg);
+		transform: translate(90px, 220px) scale(.8) rotate(30deg)
+	}
+	to {
+		opacity: 0;
+		-webkit-transform: translate(140px, 400px) scale(.5) rotate(60deg);
+		-ms-transform: translate(140px, 400px) scale(.5) rotate(60deg);
+		transform: translate(140px, 400px) scale(.5) rotate(60deg)
+	}
+}
+
+@-ms-keyframes emptyNetOdd {
+	0% {
+		opacity: 0;
+		-webkit-transform: translate(-20px) scale(0) rotate(-20deg);
+		-ms-transform: translate(-20px) scale(0) rotate(-20deg);
+		transform: translate(-20px) scale(0) rotate(-20deg)
+	}
+	33% {
+		opacity: 1;
+		-webkit-transform: translate(10px, 90px) scale(.6) rotate(5deg);
+		-ms-transform: translate(10px, 90px) scale(.6) rotate(5deg);
+		transform: translate(10px, 90px) scale(.6) rotate(5deg)
+	}
+	66% {
+		opacity: 1;
+		-webkit-transform: translate(90px, 220px) scale(.8) rotate(30deg);
+		-ms-transform: translate(90px, 220px) scale(.8) rotate(30deg);
+		transform: translate(90px, 220px) scale(.8) rotate(30deg)
+	}
+	to {
+		opacity: 0;
+		-webkit-transform: translate(140px, 400px) scale(.5) rotate(60deg);
+		-ms-transform: translate(140px, 400px) scale(.5) rotate(60deg);
+		transform: translate(140px, 400px) scale(.5) rotate(60deg)
+	}
+}
+
+@keyframes emptyNetOdd {
+	0% {
+		opacity: 0;
+		-webkit-transform: translate(-20px) scale(0) rotate(-20deg);
+		-ms-transform: translate(-20px) scale(0) rotate(-20deg);
+		transform: translate(-20px) scale(0) rotate(-20deg)
+	}
+	33% {
+		opacity: 1;
+		-webkit-transform: translate(10px, 90px) scale(.6) rotate(5deg);
+		-ms-transform: translate(10px, 90px) scale(.6) rotate(5deg);
+		transform: translate(10px, 90px) scale(.6) rotate(5deg)
+	}
+	66% {
+		opacity: 1;
+		-webkit-transform: translate(90px, 220px) scale(.8) rotate(30deg);
+		-ms-transform: translate(90px, 220px) scale(.8) rotate(30deg);
+		transform: translate(90px, 220px) scale(.8) rotate(30deg)
+	}
+	to {
+		opacity: 0;
+		-webkit-transform: translate(140px, 400px) scale(.5) rotate(60deg);
+		-ms-transform: translate(140px, 400px) scale(.5) rotate(60deg);
+		transform: translate(140px, 400px) scale(.5) rotate(60deg)
+	}
+}
+
+@-webkit-keyframes emptyNetEven {
+	0% {
+		opacity: 0;
+		-webkit-transform: translate(30px) scale(0) rotate(0deg);
+		-ms-transform: translate(30px) scale(0) rotate(0deg);
+		transform: translate(30px) scale(0) rotate(0deg)
+	}
+	30% {
+		opacity: 1;
+		-webkit-transform: translate(-30px, 100px) scale(.7) rotate(-30deg);
+		-ms-transform: translate(-30px, 100px) scale(.7) rotate(-30deg);
+		transform: translate(-30px, 100px) scale(.7) rotate(-30deg)
+	}
+	70% {
+		opacity: 1;
+		-webkit-transform: translate(-90px, 220px) scale(1) rotate(-90deg);
+		-ms-transform: translate(-90px, 220px) scale(1) rotate(-90deg);
+		transform: translate(-90px, 220px) scale(1) rotate(-90deg)
+	}
+	to {
+		opacity: 0;
+		-webkit-transform: translate(-140px, 400px) scale(.4) rotate(-230deg);
+		-ms-transform: translate(-140px, 400px) scale(.4) rotate(-230deg);
+		transform: translate(-140px, 400px) scale(.4) rotate(-230deg)
+	}
+}
+
+@-moz-keyframes emptyNetEven {
+	0% {
+		opacity: 0;
+		-webkit-transform: translate(30px) scale(0) rotate(0deg);
+		-ms-transform: translate(30px) scale(0) rotate(0deg);
+		transform: translate(30px) scale(0) rotate(0deg)
+	}
+	30% {
+		opacity: 1;
+		-webkit-transform: translate(-30px, 100px) scale(.7) rotate(-30deg);
+		-ms-transform: translate(-30px, 100px) scale(.7) rotate(-30deg);
+		transform: translate(-30px, 100px) scale(.7) rotate(-30deg)
+	}
+	70% {
+		opacity: 1;
+		-webkit-transform: translate(-90px, 220px) scale(1) rotate(-90deg);
+		-ms-transform: translate(-90px, 220px) scale(1) rotate(-90deg);
+		transform: translate(-90px, 220px) scale(1) rotate(-90deg)
+	}
+	to {
+		opacity: 0;
+		-webkit-transform: translate(-140px, 400px) scale(.4) rotate(-230deg);
+		-ms-transform: translate(-140px, 400px) scale(.4) rotate(-230deg);
+		transform: translate(-140px, 400px) scale(.4) rotate(-230deg)
+	}
+}
+
+@-ms-keyframes emptyNetEven {
+	0% {
+		opacity: 0;
+		-webkit-transform: translate(30px) scale(0) rotate(0deg);
+		-ms-transform: translate(30px) scale(0) rotate(0deg);
+		transform: translate(30px) scale(0) rotate(0deg)
+	}
+	30% {
+		opacity: 1;
+		-webkit-transform: translate(-30px, 100px) scale(.7) rotate(-30deg);
+		-ms-transform: translate(-30px, 100px) scale(.7) rotate(-30deg);
+		transform: translate(-30px, 100px) scale(.7) rotate(-30deg)
+	}
+	70% {
+		opacity: 1;
+		-webkit-transform: translate(-90px, 220px) scale(1) rotate(-90deg);
+		-ms-transform: translate(-90px, 220px) scale(1) rotate(-90deg);
+		transform: translate(-90px, 220px) scale(1) rotate(-90deg)
+	}
+	to {
+		opacity: 0;
+		-webkit-transform: translate(-140px, 400px) scale(.4) rotate(-230deg);
+		-ms-transform: translate(-140px, 400px) scale(.4) rotate(-230deg);
+		transform: translate(-140px, 400px) scale(.4) rotate(-230deg)
+	}
+}
+
+@keyframes emptyNetEven {
+	0% {
+		opacity: 0;
+		-webkit-transform: translate(30px) scale(0) rotate(0deg);
+		-ms-transform: translate(30px) scale(0) rotate(0deg);
+		transform: translate(30px) scale(0) rotate(0deg)
+	}
+	30% {
+		opacity: 1;
+		-webkit-transform: translate(-30px, 100px) scale(.7) rotate(-30deg);
+		-ms-transform: translate(-30px, 100px) scale(.7) rotate(-30deg);
+		transform: translate(-30px, 100px) scale(.7) rotate(-30deg)
+	}
+	70% {
+		opacity: 1;
+		-webkit-transform: translate(-90px, 220px) scale(1) rotate(-90deg);
+		-ms-transform: translate(-90px, 220px) scale(1) rotate(-90deg);
+		transform: translate(-90px, 220px) scale(1) rotate(-90deg)
+	}
+	to {
+		opacity: 0;
+		-webkit-transform: translate(-140px, 400px) scale(.4) rotate(-230deg);
+		-ms-transform: translate(-140px, 400px) scale(.4) rotate(-230deg);
+		transform: translate(-140px, 400px) scale(.4) rotate(-230deg)
+	}
+}
+/* 
+@-webkit-keyframes emptyNetCenter {
+	0% {
+		opacity: 0;
+		-webkit-transform: translate(30) scale(0) rotate(120deg);
+		-ms-transform: translate(30) scale(0) rotate(120deg);
+		transform: translate(30) scale(0) rotate(120deg)
+	}
+	30% {
+		opacity: 1;
+		-webkit-transform: translate(-30px, 100px) scale(.5) rotate(-30deg);
+		-ms-transform: translate(-30px, 100px) scale(.5) rotate(-30deg);
+		transform: translate(-30px, 100px) scale(.5) rotate(-30deg)
+	}
+	70% {
+		opacity: 1;
+		-webkit-transform: translate(10px, 220px) scale(.7) rotate(90deg);
+		-ms-transform: translate(10px, 220px) scale(.7) rotate(90deg);
+		transform: translate(10px, 220px) scale(.7) rotate(90deg)
+	}
+	to {
+		opacity: 0;
+		-webkit-transform: translate(5px, 400px) scale(.3) rotate(-50deg);
+		-ms-transform: translate(5px, 400px) scale(.3) rotate(-50deg);
+		transform: translate(5px, 400px) scale(.3) rotate(-50deg)
+	}
+}
+
+@-moz-keyframes emptyNetCenter {
+	0% {
+		opacity: 0;
+		-webkit-transform: translate(30) scale(0) rotate(120deg);
+		-ms-transform: translate(30) scale(0) rotate(120deg);
+		transform: translate(30) scale(0) rotate(120deg)
+	}
+	30% {
+		opacity: 1;
+		-webkit-transform: translate(-30px, 100px) scale(.5) rotate(-30deg);
+		-ms-transform: translate(-30px, 100px) scale(.5) rotate(-30deg);
+		transform: translate(-30px, 100px) scale(.5) rotate(-30deg)
+	}
+	70% {
+		opacity: 1;
+		-webkit-transform: translate(10px, 220px) scale(.7) rotate(90deg);
+		-ms-transform: translate(10px, 220px) scale(.7) rotate(90deg);
+		transform: translate(10px, 220px) scale(.7) rotate(90deg)
+	}
+	to {
+		opacity: 0;
+		-webkit-transform: translate(5px, 400px) scale(.3) rotate(-50deg);
+		-ms-transform: translate(5px, 400px) scale(.3) rotate(-50deg);
+		transform: translate(5px, 400px) scale(.3) rotate(-50deg)
+	}
+}
+
+@-ms-keyframes emptyNetCenter {
+	0% {
+		opacity: 0;
+		-webkit-transform: translate(30) scale(0) rotate(120deg);
+		-ms-transform: translate(30) scale(0) rotate(120deg);
+		transform: translate(30) scale(0) rotate(120deg)
+	}
+	30% {
+		opacity: 1;
+		-webkit-transform: translate(-30px, 100px) scale(.5) rotate(-30deg);
+		-ms-transform: translate(-30px, 100px) scale(.5) rotate(-30deg);
+		transform: translate(-30px, 100px) scale(.5) rotate(-30deg)
+	}
+	70% {
+		opacity: 1;
+		-webkit-transform: translate(10px, 220px) scale(.7) rotate(90deg);
+		-ms-transform: translate(10px, 220px) scale(.7) rotate(90deg);
+		transform: translate(10px, 220px) scale(.7) rotate(90deg)
+	}
+	to {
+		opacity: 0;
+		-webkit-transform: translate(5px, 400px) scale(.3) rotate(-50deg);
+		-ms-transform: translate(5px, 400px) scale(.3) rotate(-50deg);
+		transform: translate(5px, 400px) scale(.3) rotate(-50deg)
+	}
+} */
+
+@keyframes emptyNetCenter {
+	0% {
+		opacity: 0;
+		-webkit-transform: translate(30) scale(0) rotate(120deg);
+		-ms-transform: translate(30) scale(0) rotate(120deg);
+		transform: translate(30) scale(0) rotate(120deg)
+	}
+	/* 50% {
+		opacity: 1;
+		-webkit-transform: translate(-30px, 100px) scale(.5) rotate(-30deg);
+		-ms-transform: translate(-30px, 100px) scale(.5) rotate(-30deg);
+		transform: translate(-30px, 100px) scale(.5) rotate(-30deg)
+	} */
+	70% {
+		opacity: 1;
+		-webkit-transform: translate(10px, 220px) scale(.7) rotate(90deg);
+		-ms-transform: translate(10px, 220px) scale(.7) rotate(90deg);
+		transform: translate(10px, 220px) scale(.7) rotate(90deg)
+	}
+	to {
+		opacity: 0;
+		-webkit-transform: translate(5px, 400px) scale(.3) rotate(-50deg);
+		-ms-transform: translate(5px, 400px) scale(.3) rotate(-50deg);
+		transform: translate(5px, 400px) scale(.3) rotate(-50deg)
+	}
+}
+@keyframes blink {
+	0% {
+		opacity: 0;
+	
+	}
+	50% {
+		opacity: 1;
+		
+	}
+	70% {
+		opacity: 1;
+	
+	}
+	to {
+		opacity: 0;
+	
+	}
+}
+
+.sectiontwo{
+    position: relative;
+}
+.fallingeffect{
+    width: 350px;
+    height: 290px;
+    position: absolute;
+    top: 10%;
+    left: 13%;
+}
+.fallingitem{
+    position:absolute;
+    top: -150px;
+    opacity: 0;
+    will-change: transform;
+    animation: emptyNetCenter 3.4s .5s linear infinite;
+}
+.fallpositiontwo{
+    left: -43%;
+    top: 5%;
+    animation: blink 3.4s .5s linear infinite;
+}
+svg polygon:hover {
+    stroke: red !important;
+}
+
+/* falling effects ends */
+
+/* particle effect style */
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+
+/* ---- particles.js container ---- */
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+/* ---- stats.js ---- */
+
+.count-particles{
+  background: #000022;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 80px;
+  color: #13E8E9;
+  font-size: .8em;
+  text-align: left;
+  text-indent: 4px;
+  line-height: 14px;
+  padding-bottom: 2px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+
+.js-count-particles{
+  font-size: 1.1em;
+}
+
+#stats,
+.count-particles{
+  -webkit-user-select: none;
+}
+
+#stats{
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+}
+
+.count-particles{
+  border-radius: 0 0 3px 3px;
+}
+/* particle effectstyle ends */
+/* line animation svg */
+.sectlineanim{
+    position: absolute;
+    top: 18.7%;
+    left: 0;
+    width: 100%;
+}
+
+
+
+
+
+
+/* line animation svg ends */
+</style>
+<body>
+    <div class="section">
+        <div class="fullsect">
+            <div class="imgsetc">
+
+            </div>
+            <div class="imgtwosect posione panorama-object count" data-pano-x="0.5" data-pano-y="0.35">
+                2000
+            </div>
+            <div class="imgtwosect positwo panorama-object count" data-pano-x="0.5" data-pano-y="0.35">
+                    9000
+            </div>
+            <div class="imgtwosect posithree panorama-object count" data-pano-x="0.5" data-pano-y="0.35">
+                    6000
+            </div>
+            <div class="imgtwosect posifour panorama-object count" data-pano-x="0.5" data-pano-y="0.35">
+                    5000
+            </div>
+        </div>
+        
+    </div>
+    <div class="sectheading">
+            <img src="./images/c7.jpg">
+         
+                <div class="ripples"><i></i><i></i><i></i><i></i><i></i></div>
+            
+    </div>
+    <div class="sectiontwo">
+        <img src="images/c2.jpg">
+        <div class="fallingeffect"  style=" top: -37px!important">
+            <div id="particles-js"></div>
+           
+        </div>
+    </div>
+    <div class="sectiontwo">
+        <img src="images/c2.jpg">
+        <img src="images/c3.jpg">
+        <img src="images/c4.jpg">
+        <img src="images/c6.jpg">
+        <div class="sectlineanim">
+           
+                <svg height="1700" width="100%" >
+                        <!-- <image x="2" y="10" xlink:href="https://mdn.mozillademos.org/files/6457/mdn_logo_only_color.png" height="200" width="200"/> -->
+                         <path d="M 442 0 l 203 105 l 0 1700" id="flow" style="fill:transparent;stroke-width:3;
+                        stroke:#0fffff;stroke-opacity:0.5;"/>       
+      
+            <circle id="circle" r="6" cx="0" cy="0" fill="#0fffff" />
+            <circle id="circle4" r="6" cx="0" cy="0" fill="#0fffff" />
+                          <animateMotion 
+                                xlink:href="#circle"
+                                dur="4s"
+                                begin="0s"
+                                fill="freeze"
+                                repeatCount="indefinite">
+                            <mpath xlink:href="#flow" />
+                        </animateMotion>
+                        <animateMotion 
+                                xlink:href="#circle4"
+                                dur="4s"
+                                begin="2s"
+                                fill="freeze"
+                                repeatCount="indefinite">
+                            <mpath xlink:href="#flow" />
+                        </animateMotion>
+                        <path d="M 930 728 l -212 17 l -74 75 l 0 796" id="flow2" style="fill:transparent;stroke-width:3;
+                        stroke:#0fffff;stroke-opacity:0.5;"/>       
+      
+            <circle id="circle2" r="6" cx="0" cy="0" fill="#0fffff" />
+                          <animateMotion 
+                                xlink:href="#circle2"
+                                dur="3s"
+                                begin="2s"
+                                fill="freeze"
+                                repeatCount="indefinite">
+                            <mpath xlink:href="#flow2" />
+                        </animateMotion>
+                        <path d="M 377 1384 l 192 35 l 75 61 l -1 230" id="flow3" style="fill:transparent;stroke-width:3;
+                        stroke:#0fffff;stroke-opacity:0.5;"/>       
+      
+            <circle id="circle3" r="6" cx="0" cy="0" fill="#0fffff" />
+                          <animateMotion 
+                                xlink:href="#circle3"
+                                dur="3s"
+                                begin="2s"
+                                fill="freeze"
+                                repeatCount="indefinite">
+                            <mpath xlink:href="#flow3" />
+                        </animateMotion>
+            
+        </svg>
+        </div>
+        <div class="fallingeffect">
+           <span class="fallingitem">
+            <svg height="210" width="500">
+                <polygon points="200,10 250,190 160,210" style="fill:transparent;stroke:#61fffe;stroke-width:1" />
+                Sorry, your browser does not support inline SVG.
+              </svg>
+           </span>
+           <span class="fallingitem fallpositiontwo">
+            <svg height="250" width="400">
+                <polygon points="220,100 230,190 160,210" style="fill:transparent;stroke:#61fffe;stroke-width:1"></polygon>
+                Sorry, your browser does not support inline SVG.
+              </svg>
+           </span>
+
+        </div>
+    </div>
+  
+    <div class="sectionthree">
+        <img src="./images/c8.jpg">
+        <div class="ripleeffecttwo">
+            <div class="rippleeftwo ripple-one"></div>
+            <div class="rippleftwo ripple-two"></div>
+            <div class="rippleftwo ripple-three"></div>
+        </div>
+        <div class="ripleeffecttwo positiontwo">
+            <div class="rippleeftwo ripple-one"></div>
+            <div class="rippleftwo ripple-two"></div>
+            <div class="rippleftwo ripple-three"></div>
+        </div>
+        <div class="ripleeffecttwo positionthree">
+            <div class="rippleeftwo ripple-one"></div>
+            <div class="rippleftwo ripple-two"></div>
+            <div class="rippleftwo ripple-three"></div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="js/TweenMax.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
+    
+    
+    <script>
+          var panoramaObject = $('.panorama-object');
+          var panoFallback = false;
+          var panoFallbackVar = 1;
+        $(document).ready(function(){
+            windowWidth = $(window).innerWidth();
+            windowHeight = $(window).height(); 
+            halfWindowWidth = windowWidth / 2;
+            halfWindowHeight = windowHeight / 2;
+          
+            panoSizeHandler();
+            panorama();
+           
+                $('.count').each(function () {
+            // $(this).prop('Counter',1000).animate({
+            //     Counter: $(this).text()
+            // }, {
+            //     duration: 4000,
+            //     // easing: 'swing',
+            //     complete:function(){
+            //       restartcounter(this);
+            //     },
+            //     step: function (now) {
+            //         $(this).text(Math.ceil(now));
+            //     }
+            //     });
+            restartcounter(this);
+            });
+            
+            
+        });
+
+        function restartcounter(ele){
+            
+            $(ele).prop('Counter',1000).animate({
+                Counter: $(ele).text()
+            }, {
+                duration: 4000,
+                // easing: 'swing',
+                complete:function(){
+                  restartcounter(ele);
+                },
+                step: function (now) {
+                    $(this).text(Math.ceil(now));
+                }
+                });
+        }
+
+        $(window).resize(function() {
+			panoSizeHandler();
+		}); // END OF RESIZE
+
+        function panoSizeHandler() {
+            panoSizeX = windowWidth * 0.3;
+            panoSizeY = windowWidth * 0.07;
+            panoHalf = windowWidth/2;
+            panoHalfHeight = windowHeight/2;
+            panoAngleIntensity = 1300 / windowWidth;
+        }
+        
+	
+
+
+        
+    
+    function panorama(e) {
+        $("body").mousemove(function(e) {
+            var mouseX = e.pageX;
+            var mouseY = e.pageY;
+            panoramaCalcs(mouseX, mouseY, 2.5);
+        });
+    }
+
+    function panoramaCalcs(mX, mY, objectsSpeed) {
+        
+        panoMouseXBase = (mX-panoHalf)/panoHalf;
+        panoMouseYBase = (mY-panoHalfHeight)/panoHalfHeight;
+
+        panoramaMouseX = panoMouseXBase * -panoSizeX;
+        panoramaMouseY = ((mY - panoHalf) / panoHalf) * -panoSizeY;
+        
+        panoramaAngleX = panoramaMouseX / -4;
+        panoramaAngleY = panoramaMouseY / 8;
+
+        // TweenMax.to($('.imgsettwo'),
+        // 	1, {
+        // 		rotation: panoMouseXBase*60
+        // 	}
+        // );
+
+        TweenMax.to($('.imgsetc'),
+            1.7, {
+                x: panoramaMouseX,
+                y: panoramaMouseY
+            }
+        );
+
+        // TweenMax.to($('.imgsettwo'),
+        //     1.7, {
+        //         x: panoramaMouseX,
+        //         y: panoramaMouseY
+        //     }
+        // );
+
+        panoramaObject.each(function() {
+        	panoramaObjectMovement($(this), objectsSpeed);
+        });
+        }
+        function panoramaObjectMovement(e, objectsSpeed) {
+            // thisX = e.attr('data-pano-x');
+            // thisY = e.attr('data-pano-y');
+            // panoObjectX = (((thisX - panoMouseXBase)*panoHalf)*1.2);
+            // panoObjectY = (((thisY - panoMouseYBase)*panoHalfHeight)/1.5);
+            // angleObjectX = ((panoObjectX/-12)*panoFallbackVar)*panoAngleIntensity;
+            // angleObjectY = ((panoObjectY/20)*panoFallbackVar)*panoAngleIntensity;
+            // TweenMax.to(e,
+            //     objectsSpeed, {
+            //         x: panoObjectX,
+            //         y: panoObjectY,
+            //         rotationY: angleObjectX,
+            //         rotationX: angleObjectY,
+            //         ease: 'circ.easeInOut'
+            //         // MAKE SURE ROTATIONS ARE HANDLED SEPARATELY FOR NON-SAFARI!
+            //     }
+            // );
+            TweenMax.to(e,
+            1.7, {
+                x: panoramaMouseX,
+                y: panoramaMouseY
+            }
+        );
+        }
+
+       
+    </script>
+    <script>
+    // particle effect js
+    
+
+particlesJS("particles-js", {
+  "particles": {
+    "number": {
+      "value": 60,
+      "density": {
+        "enable": true,
+        "value_area": 500
+      }
+    },
+    "color": {
+      "value": "#61fffe"
+    },
+    "shape": {
+      "type": "edge",
+      "stroke": {
+        "width": 0,
+        "color": "#000000"
+      },
+      "polygon": {
+        "nb_sides": 8
+      },
+      "image": {
+        "src": "img/github.svg",
+        "width": 100,
+        "height": 100
+      }
+    },
+    "opacity": {
+      "value": 0.5,
+      "random": false,
+      "anim": {
+        "enable": false,
+        "speed": 1,
+        "opacity_min": 0.1,
+        "sync": false
+      }
+    },
+    "size": {
+      "value": 0,
+      "random": true,
+      "anim": {
+        "enable": false,
+        "speed": 40,
+        "size_min": 0.1,
+        "sync": false
+      }
+    },
+    "line_linked": {
+      "enable": true,
+      "distance": 100,
+      "color": "#61fffe",
+      "opacity": .7,
+      "width": 2
+    },
+    "move": {
+      "enable": true,
+      "speed": 3,
+      "direction": "none",
+      "random": false,
+      "straight": false,
+      "out_mode": "out",
+      "bounce": false,
+      "attract": {
+        "enable": false,
+        "rotateX": 600,
+        "rotateY": 1200
+      }
+    }
+  },
+  "interactivity": {
+    "detect_on": "canvas",
+    "events": {
+      "onhover": {
+        "enable": false,
+        "mode": "grab"
+      },
+      "onclick": {
+        "enable": true,
+        "mode": "push"
+      },
+      "resize": true
+    },
+    "modes": {
+      "grab": {
+        "distance": 140,
+        "line_linked": {
+          "opacity": .8
+        }
+      },
+      "bubble": {
+        "distance": 400,
+        "size": 40,
+        "duration": 2,
+        "opacity": 8,
+        "speed": 3
+      },
+      "repulse": {
+        "distance": 200,
+        "duration": 0.4
+      },
+      "push": {
+        "particles_nb": 4
+      },
+      "remove": {
+        "particles_nb": 2
+      }
+    }
+  },
+  "retina_detect": true
+});
+
+
+/* ---- stats.js config ---- */
+
+// var count_particles, stats, update;
+// stats = new Stats;
+// stats.setMode(0);
+// stats.domElement.style.position = 'absolute';
+// stats.domElement.style.left = '0px';
+// stats.domElement.style.top = '0px';
+// document.body.appendChild(stats.domElement);
+// count_particles = document.querySelector('.js-count-particles');
+// update = function() {
+//   stats.begin();
+//   stats.end();
+//   if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+//     count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+//   }
+//   requestAnimationFrame(update);
+// };
+// requestAnimationFrame(update);
+    </script>
+</body>
+</html>

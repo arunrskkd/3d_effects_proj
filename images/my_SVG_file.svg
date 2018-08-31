@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 194 186" preserveAspectRatio="xMidYMid meet">
+                        <path d="M -3 0 l 167 86 l 0 1000 " id="flow" style="fill:transparent;stroke-width:3;
+                        stroke:#0fffff;stroke-opacity:0.5;"/>       
+      
+            <circle id="circle" r="6" cx="0" cy="0" fill="#0fffff" />
+                          <animateMotion 
+           xlink:href="#circle"
+           dur="5s"
+           begin="0s"
+           fill="freeze"
+           repeatCount="indefinite">
+    <mpath xlink:href="#flow" />
+  </animateMotion>
+            
+        </svg>
